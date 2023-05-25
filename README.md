@@ -1,4 +1,4 @@
-# APPS_NFA_DFA_MACHINE-
+# APPS_NFA_DFA_MACHINE
 Finite State Automata (FSA) machines are used to check the input string against a given FSA diagram and indicate whether the input is accepted or not. FSA consists of two types, namely Deterministic Finite Automata (DFA) and Non-Deterministic Finite Automata (NFA). DFA has a deterministic nature in determining the state to be reached, with clear and non-branching transitions. NFA has a non-deterministic nature with ambiguous possibilities, including transitions to multiple states or empty states. The input limit in this FSA machine is 8 digits for binary numbers and 255 for decimal numbers. Input exceeding these limits will result in a messy and untidy display.
 ## Honed Skill
 1. Programming
