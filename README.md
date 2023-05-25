@@ -18,3 +18,16 @@ Finite State Automata (FSA) machines are used to check the input string against 
 * Experience in developing GUI applications: Developing GUI applications gave me practical experience in building applications that interact with the user through graphical interfaces. This experience will be useful in my career as a software developer.
 * Improve problem-solving skills: In developing this application, I will be faced with various challenges and problems that I need to solve. This will help improve my problem-solving skills and provide me with valuable insights into dealing with problems in software development.
 ## User Interface Graphical Display
+### For Display Welcome Page
+![For Display Welcome Page](assets/welcome.png)
+### For Display Home Page
+![For Display home Page](assets/home.png)
+### For Display DFA Page
+![For Display DFA Page](assets/DFAmachine.png)
+### For Display NFA Page
+![For Display NFA Page](assets/NFAmachine.png)
+### For Display Biner & Desimal DFA NFA Page
+![For Display NFA Page](assets/desimalDFA.png)
+![For Display NFA Page](assets/desimalNFA.png)
+![For Display NFA Page](assets/binerDFA.png)
+![For Display NFA Page](assets/binerNFA.png)
