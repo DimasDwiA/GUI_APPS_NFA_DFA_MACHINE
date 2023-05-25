@@ -1,0 +1,52 @@
+<Nfa>:
+    MDFloatLayout:
+        md_bg_color: [1,1,1,1]
+    MDLabel:
+        text: "NFA Machine"
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.88}
+        font_size: "28sp"
+        font_name: "Poppins-Bold"
+        size_hint_x: .3
+    Image:
+        source: "assets/Gambar/NFArevisi.png"
+        size_hint: .9, .6
+        pos_hint: {'center_x': 0.5,'center_y': 0.61}
+        size_hint: .5, .5
+    MDLabel:
+        text: "Untuk membantu Anda menghitung NFA, bantu kami mengetahui input mana yang ingin Anda gunakan"
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.37}
+        font_size: "15sp"
+        font_name: "Poppins-SemiBold"
+        size_hint_x: .7
+        color: rgba(127,127,127,255)
+    MDRoundFlatButton:
+        text: "Desimal"
+        font_name: "Poppins-Bold"
+        pos_hint: {'center_x': 0.5,'center_y': 0.27}
+        size_hint: .3, .05
+        on_release:
+            root.manager.current = "desimal_nfa"
+    MDLabel:
+        text: "OR"
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.216}
+        font_size: "15sp"
+        font_name: "Poppins-SemiBold"
+    MDRoundFlatButton:
+        text: "Biner"
+        font_name: "Poppins-Bold"
+        pos_hint: {'center_x': 0.5,'center_y': 0.156}
+        size_hint: .3, .05
+        on_release:
+            root.manager.current = "biner_nfa"
+    MDFloatingActionButton:
+        icon: "arrow-left"
+        pos_hint: {'center_x': 0.05,'center_y': 0.95}
+        size_hint: .05, .05
+        elevation_normal: 0
+        on_release:
+            root.manager.transition.direction = 'left'
+            root.manager.current = 'menu'
+        

@@ -1,0 +1,42 @@
+<About>:
+    MDFloatLayout:
+        md_bg_color: [1,1,1,1]
+    MDLabel:
+        text: "Automata"
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.88}
+        font_size: "28sp"
+        font_name: "Poppins-Bold"
+        size_hint_x: .3
+    MDFloatingActionButton:
+        icon: "arrow-left"
+        pos_hint: {'center_x': 0.05,'center_y': 0.95}
+        size_hint: .05, .05
+        elevation_normal: 0
+        on_release:
+            root.manager.transition.direction = 'left'
+            root.manager.current = 'menu'
+    MDLabel:
+        text: "Automata pada FSA (Finite State Automaton) adalah model matematika yang digunakan untuk menggambarkan sistem yang berubah dalam keadaan terbatas atau memiliki jumlah terbatas dari keadaan internal yang dapat diakses. FSA merupakan salah satu jenis automata yang sederhana dan populer dalam teori bahasa formal dan otomata."
+        size_hint_x: .75
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.68}
+        font_size: "15sp"
+        font_name: "Poppins-SemiBold"
+        color: rgba(127,127,127,255)
+    MDLabel:
+        text: "Pada FSA, sistem diwakili oleh himpunan keadaan (states) yang dapat dicapai. Sistem berinteraksi dengan input, dan transisi antara keadaan terjadi berdasarkan input yang diberikan. Selain itu, terdapat keadaan awal (start state) yang memulai sistem, keadaan akhir (final state) yang menandakan penerimaan atau penolakan, dan fungsi transisi yang menentukan bagaimana sistem berpindah ke keadaan berikutnya berdasarkan input yang diterima."
+        size_hint_x: .9
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.455}
+        font_size: "15sp"
+        font_name: "Poppins-SemiBold"
+        color: rgba(127,127,127,255)
+    MDLabel:
+        text: "FSA memiliki beberapa variasi, termasuk deterministic finite automaton (DFA) dan nondeterministic finite automaton (NFA). DFA hanya memiliki satu transisi yang mungkin untuk setiap kombinasi input dan keadaan, sementara NFA dapat memiliki beberapa transisi yang mungkin untuk kombinasi yang sama."
+        size_hint_x: .95
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.25}
+        font_size: "15sp"
+        font_name: "Poppins-SemiBold"
+        color: rgba(127,127,127,255)

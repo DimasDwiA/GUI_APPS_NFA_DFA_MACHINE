@@ -1,0 +1,51 @@
+<Menu>:
+    MDFloatLayout:
+        md_bg_color: [1,1,1,1]
+    MDLabel:
+        text: "DFA & NFA Machine"
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.88}
+        font_size: "28sp"
+        font_name: "Poppins-Bold"
+        size_hint_x: .3
+    MDLabel:
+        text: "Silahkan pilih menu yang diinginkan"
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.68}
+        font_size: "17sp"
+        font_name: "Poppins-SemiBold"
+    MDLabel:
+        text: "M E N U"
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.58}
+        font_size: "20sp"
+        font_name: "Poppins-SemiBold"
+    MDFillRoundFlatButton:
+        text: "DFA"
+        font_name: "Poppins-SemiBold"
+        pos_hint: {'center_x': 0.5,'center_y': 0.47}
+        size_hint: .4, .05
+        on_release:
+            root.manager.current = "dfa"
+    MDFillRoundFlatButton:
+        text: "NFA"
+        font_name: "Poppins-SemiBold"
+        pos_hint: {'center_x': 0.5,'center_y': 0.37}
+        size_hint: .4, .05
+        on_release:
+            root.manager.current = "nfa"
+    MDFillRoundFlatButton:
+        text: "About Automata"
+        font_name: "Poppins-SemiBold"
+        pos_hint: {'center_x': 0.5,'center_y': 0.27}
+        size_hint: .4, .05
+        on_release:
+            root.manager.current = "about"
+    MDFloatingActionButton:
+        icon: "arrow-left"
+        pos_hint: {'center_x': 0.05,'center_y': 0.95}
+        size_hint: .05, .05
+        elevation_normal: 0
+        on_release:
+            root.manager.transition.direction = 'left'
+            root.manager.current = 'home'

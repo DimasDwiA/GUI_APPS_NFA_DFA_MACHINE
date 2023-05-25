@@ -1,0 +1,47 @@
+<DesimalNfa>:
+    MDFloatLayout:
+        md_bg_color: [1,1,1,1]
+    MDLabel:
+        text: "NFA Machine"
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.88}
+        font_size: "28sp"
+        font_name: "Poppins-Bold"
+        size_hint_x: .3
+    MDLabel:
+        text: "I N F O R M A S I"
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.81}
+        font_size: "18sp"
+        font_name: "Poppins-SemiBold"
+        color: rgba(127,127,127,255) 
+    MDFillRoundFlatButton:
+        text: "Continue"
+        font_name: "Poppins-SemiBold"
+        pos_hint: {'center_x': 0.89,'center_y': 0.05}
+        size_hint: .2, .05
+        on_release:
+            root.manager.current = "cal_des_nfa"
+    Image:
+        source: "assets/Gambar/NFArevisi.png"
+        size_hint: .75, .4
+        pos_hint: {'center_x': 0.53,'center_y': 0.6}
+    Image:
+        source: "assets/Gambar/table_nfa.png"
+        size_hint: .3, .45
+        pos_hint: {'center_x': 0.5,'center_y': 0.32}
+    MDLabel:
+        text: "M = ({q0,q1,q2,q3,q4}, {0,1}, δ, q0, {q4})"
+        halign: "center"
+        pos_hint: {'center_y': 0.15}
+        font_size: "18sp"
+        font_name: "Poppins-SemiBold"
+    MDFloatingActionButton:
+        icon: "arrow-left"
+        pos_hint: {'center_x': 0.05,'center_y': 0.95}
+        size_hint: .05, .05
+        elevation_normal: 0
+        on_release:
+            root.manager.transition.direction = 'left'
+            root.manager.current = 'nfa'
+    

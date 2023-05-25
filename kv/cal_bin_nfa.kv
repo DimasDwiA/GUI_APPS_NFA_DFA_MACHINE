@@ -1,0 +1,54 @@
+<Cal_Bin_Nfa>:
+    MDFloatLayout:
+        md_bg_color: [1,1,1,1]
+    MDLabel:
+        text: "NFA Machine"
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.88}
+        font_size: "28sp"
+        font_name: "Poppins-Bold"
+        size_hint_x: .3
+    Image:
+        source: "assets/Gambar/NFArevisi.png"
+        size_hint: .55, .4
+        pos_hint: {'center_x': 0.5,'center_y': 0.7}
+    TextInput:
+        size_hint: .27, .05
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.52}
+        id: fix_bin
+        hint_text: "Biner"
+    MDLabel:
+        text: "Biner"
+        halign: "center"
+        pos_hint: {'center_x': 0.3,'center_y': 0.52}
+        font_size: "15sp"
+        font_name: "Poppins-SemiBold"
+    MDRoundFlatButton:
+        text: "Hasil"
+        font_name: "Poppins-Bold"
+        pos_hint: {'center_x': 0.5,'center_y': 0.44}
+        size_hint: .2, .05
+        on_release:
+            root.run_dfa()
+    MDLabel:
+        text: "Input Your Biner"
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.58}
+        font_size: "15sp"
+        font_name: "Poppins-SemiBold"
+        color: rgba(127,127,127,255)
+    MDFloatingActionButton:
+        icon: "arrow-left"
+        pos_hint: {'center_x': 0.05,'center_y': 0.95}
+        size_hint: .05, .05
+        elevation_normal: 0
+        on_release:
+            root.manager.transition.direction = 'left'
+            root.manager.current = 'biner_nfa'
+    Label:
+        id: output_label
+        halign: "center"
+        pos_hint: {'center_y': 0.26}
+        font_size: "15sp"
+        color: rgba(13, 13, 13)

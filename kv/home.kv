@@ -1,0 +1,30 @@
+<Home>:
+    MDFloatLayout:
+        md_bg_color: [1,1,1,1]
+    Image:
+        source: "assets/Gambar/DFA.png"
+        size_hint: .9, .5
+        pos_hint: {'center_x': 0.5,'center_y': 0.7}
+    MDLabel:
+        text: "Hai Automers !"
+        halign: "center"
+        pos_hint: {'center_y': 0.36}
+        font_size: "27sp"
+        font_name: "Poppins-Bold"
+    MDLabel:
+        text: "Selamat Datang di aplikasi DFA & NFA Machine"
+        size_hint_x: .4
+        halign: "center"
+        pos_hint: {'center_x': 0.5,'center_y': 0.27}
+        size_hint_x: .4
+        font_size: "20sp"
+        font_name: "Poppins-SemiBold"
+        color: rgba(127,127,127,255)
+    MDFillRoundFlatButton:
+        text: "MULAI"
+        font_name: "Poppins-SemiBold"
+        pos_hint: {'center_x': 0.5,'center_y': 0.15}
+        size_hint: .3, .05
+        on_release:
+            root.manager.current = "menu"
+
